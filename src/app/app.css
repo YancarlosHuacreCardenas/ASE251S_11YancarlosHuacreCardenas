@@ -1,0 +1,212 @@
+﻿:host {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(145deg, #e7f1ff 0%, #f7fbff 100%);
+  font-family: "Inter", "Segoe UI", Roboto, Arial, sans-serif;
+  color: #1a2740;
+  padding: 20px;
+}
+.resume-card {
+  width: min(96vw, 900px);
+  background: #ffffff;
+  border-radius: 26px;
+  box-shadow: 0 18px 40px rgba(32, 42, 56, 0.15);
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  overflow: hidden;
+  border: 1px solid #dde7f2;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.resume-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 24px 46px rgba(30, 44, 63, 0.22);
+}
+.resume-card.dark {
+  background: #0d1729;
+  border-color: #1a2a45;
+  color: #dbe2f0;
+  box-shadow: 0 18px 42px rgba(0, 0, 0, 0.5);
+}
+.profile-panel {
+  background: linear-gradient(160deg, #2048ba 0%, #1c3cb0 58%, #153280 100%);
+  color: #f4f7ff;
+  padding: 28px 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.profile-panel .avatar {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid white;
+  box-shadow: 0 8px 24px rgba(10, 25, 65, 0.45);
+  margin: 0 auto;
+}
+.profile-panel h1 {
+  font-size: 1.65rem;
+  margin: 10px 0 4px;
+  text-align: center;
+}
+.profile-panel .subtitle,
+.profile-panel .location {
+  text-align: center;
+  margin: 0;
+  font-size: 0.95rem;
+}
+.profile-panel .contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.contact-link {
+  color: #d8e8ff;
+  text-decoration: none;
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 8px;
+  padding: 8px 10px;
+  font-size: 0.92rem;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+.contact-link:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: translateY(-1px);
+}
+.actions {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  margin-top: 8px;
+}
+.content-panel {
+  padding: 22px 26px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.section h2 {
+  margin: 0 0 8px;
+  font-size: 1rem;
+  letter-spacing: 0.06em;
+  color: #1f3657;
+}
+.resume-card.dark .section h2 {
+  color: #dbe2f0;
+}
+.section p {
+  margin: 0 0 10px;
+  line-height: 1.58;
+}
+.section ul {
+  padding-left: 20px;
+  margin: 0;
+  color: #344964;
+}
+.resume-card.dark .section ul {
+  color: #bfcdeb;
+}
+.section li {
+  margin-bottom: 5px;
+}
+.project-card {
+  border: 1px solid #d7e2ef;
+  border-radius: 10px;
+  background: #f6faff;
+  padding: 12px 14px;
+}
+.resume-card.dark .project-card {
+  border-color: #20334d;
+  background: #131f36;
+}
+.project-card h3 {
+  margin: 0 0 3px;
+  font-size: 1.05rem;
+}
+.tech {
+  margin-top: 6px;
+  color: #486280;
+  font-size: 0.88rem;
+}
+.resume-card.dark .tech {
+  color: #bfcdeb;
+}
+.phrase-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: 1px solid #c7d5eb;
+  background: #ebf4ff;
+}
+.resume-card.dark .phrase-box {
+  border-color: #243b58;
+  background: #13223f;
+}
+.phrase {
+  flex: 1;
+  margin: 0;
+  font-style: italic;
+  color: #1e3d67;
+}
+.resume-card.dark .phrase {
+  color: #c9d8f3;
+}
+.toggle-btn,
+.action-btn {
+  border: 1px solid transparent;
+  border-radius: 50px;
+  padding: 9px 15px;
+  font-weight: 700;
+  font-size: 0.88rem;
+  cursor: pointer;
+  transition: all 0.18s ease;
+}
+.toggle-btn {
+  background: linear-gradient(140deg, #1f58bf, #3e7be6);
+  color: #fff;
+}
+.toggle-btn:hover {
+  filter: brightness(1.08);
+  transform: translateY(-1px);
+}
+.action-btn {
+  background: linear-gradient(140deg, #0d244e, #1c4bb0);
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.16);
+}
+.action-btn:hover {
+  filter: brightness(1.1);
+  transform: translateY(-1px);
+}
+.resume-card.dark .toggle-btn {
+  background: linear-gradient(145deg, #3b6df2, #6d9ef7);
+  color: #0f172a;
+}
+.resume-card.dark .action-btn {
+  background: linear-gradient(145deg, #1a324f, #2c4f78);
+  color: #eff6ff;
+  border-color: rgba(255, 255, 255, 0.22);
+}
+.extra-panel {
+  background: #f0f6ff;
+  border: 1px dashed #b9ceea;
+  border-radius: 10px;
+  padding: 12px 14px;
+  color: #2d4f74;
+}
+.resume-card.dark .extra-panel {
+  background: #142339;
+  border-color: #2f4b6c;
+  color: #d4e0f5;
+}
+@media (max-width: 900px) {
+  .resume-card { grid-template-columns: 1fr; }
+  .profile-panel { align-items: center; text-align: center; }
+  .content-panel { padding: 20px 18px 20px; }
+}
